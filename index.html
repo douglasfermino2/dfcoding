@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="DF Coding - Soluções de software premium. Engenharia de APIs robustas, inteligência artificial integrada, arquiteturas SaaS escaláveis e landing pages exclusivas de alta performance.">
+    <meta name="keywords"
+        content="desenvolvimento de software, APIs, SaaS, inteligência artificial, landing pages, DF Coding, TypeScript, Node.js, automação">
+    <meta name="author" content="DF Coding">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="DF Coding | Engenharia de Software Premium & I.A.">
+    <meta property="og:description"
+        content="Engenharia de software sob medida. Conectamos sua empresa ao futuro com APIs seguras, agentes de inteligência artificial e plataformas SaaS sob medida.">
+    <meta property="og:url" content="https://dfcoding.com.br/">
+
+    <title>DF Coding | Engenharia de Software Premium & I.A.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JS Script (deferred) -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">DF</span>Coding
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
+                    <li><a href="#terminal" class="nav-link">Demonstração</a></li>
+                    <li><a href="#estimador" class="nav-link">Estimador</a></li>
+                    <li><a href="#contato" class="nav-link btn-contact-nav">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        Disponível para novos projetos
+                    </div>
+                    <h1>Transformando código em <span class="text-gradient">soluções inteligentes</span></h1>
+                    <p class="hero-subtitle">Engenharia de software premium sob medida. Desenvolvemos APIs robustas,
+                        arquiteturas SaaS escaláveis, integrações avançadas com I.A. e landing pages exclusivas
+                        projetadas para alta conversão.</p>
+
+                    <div class="hero-actions">
+                        <a href="#estimador" class="btn btn-primary btn-glow">Simular Projeto</a>
+                        <a href="#servicos" class="btn btn-secondary">Ver Habilidades</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="floating-card hero-card-1">
+                        <div class="card-icon">🚀</div>
+                        <div>
+                            <h4>SaaS Escalável</h4>
+                            <p>Multi-tenant & Pagamentos</p>
+                        </div>
+                    </div>
+                    <div class="floating-card hero-card-2">
+                        <div class="card-icon">🤖</div>
+                        <div>
+                            <h4>Agentes de I.A.</h4>
+                            <p>LLMs & Automação RAG</p>
+                        </div>
+                    </div>
+                    <div class="hero-blob"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">O que podemos construir para <span class="text-gradient">você</span></h2>
+                    <p class="section-subtitle">Combinamos arquiteturas de ponta com design de alta fidelidade para
+                        entregar o melhor software do mercado.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: I.A. -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper purple">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="service-svg">
+                                <path
+                                    d="M12 2a10 10 0 0 1 7.54 16.59c-.24.25-.39.58-.42.92l-.12 1.5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1l-.12-1.5c-.03-.34-.18-.67-.42-.92A10 10 0 0 1 12 2z">
+                                </path>
+                                <path d="M8 10h8"></path>
+                                <path d="M12 6v8"></path>
+                                <path d="M10 14h4"></path>
+                            </svg>
+                        </div>
+                        <h3>Inteligência Artificial & Agentes</h3>
+                        <p>Integramos modelos de linguagem (LLMs), criamos assistentes virtuais cognitivos autônomos,
+                            sistemas RAG (Retrieval-Augmented Generation) para consulta a dados internos e automações
+                            que otimizam horas de trabalho manual.</p>
+                    </div>
+
+                    <!-- Service 2: APIs -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="service-svg">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Engenharia de APIs Robustas</h3>
+                        <p>Desenvolvemos APIs RESTful e GraphQL ultra-rápidas em Node.js ou Python. Focamos em segurança
+                            (OAuth2, JWT, rate-limiting), alta escalabilidade e integrações impecáveis com bancos de
+                            dados relacionais e NoSQL.</p>
+                    </div>
+
+                    <!-- Service 3: SaaS -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper green">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="service-svg">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="9" y1="3" x2="9" y2="21"></line>
+                                <line x1="15" y1="3" x2="15" y2="21"></line>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="3" y1="15" x2="21" y2="15"></line>
+                            </svg>
+                        </div>
+                        <h3>Plataformas SaaS Completas</h3>
+                        <p>Arquitetamos o seu Software as a Service do zero. Desenvolvemos desde o controle
+                            multi-tenant, integração avançada com gateways de pagamento (Stripe, Asaas, etc.),
+                            dashboards analíticos interativos até painéis admin inteligentes.</p>
+                    </div>
+
+                    <!-- Service 4: Landing Pages -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="service-svg">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="2" y1="20" x2="22" y2="20"></line>
+                                <line x1="12" y1="17" x2="12" y2="20"></line>
+                            </svg>
+                        </div>
+                        <h3>Landing Pages de Alta Conversão</h3>
+                        <p>Desenvolvemos landing pages e páginas institucionais com design exclusivo e autoral,
+                            totalmente otimizadas para carregamento rápido (performance nota 100 no Lighthouse), SEO
+                            avançado e prontas para converter visitantes em clientes.</p>
+                    </div>
+
+                    <!-- Service 5: Soluções Customizadas -->
+                    <div class="service-card">
+                        <div class="service-icon-wrapper teal">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="service-svg">
+                                <path
+                                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+                                </path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>Soluções Customizadas & DevOps</h3>
+                        <p>Otimização de consultas lentas em bancos de dados, configuração de pipelines de CI/CD para
+                            automação de deploys, containerização de aplicações com Docker e infraestrutura segura em
+                            nuvem (AWS/GCP).</p>
+                    </div>
+
+                    <!-- Unique Landing Pages Feature -->
+                    <div class="service-card feature-highlight">
+                        <div class="highlight-badge">DIFERENCIAL</div>
+                        <h3>Projetos 100% Personalizados</h3>
+                        <p>Não usamos templates genéricos ou construtores de arrastar e soltar que deixam seu site
+                            lento. Cada linha de código é escrita sob medida para garantir design único, performance
+                            incrível e o máximo de exclusividade para o seu negócio.</p>
+                        <div class="highlight-footer">
+                            <span class="tech-tag">Design Sob Medida</span>
+                            <span class="tech-tag">Zero Bloat</span>
+                            <span class="tech-tag">SEO Perfeito</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="tecnologias" class="tech-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Stack de <span class="text-gradient">Tecnologia</span></h2>
+                    <p class="section-subtitle">Trabalhamos com o ecossistema mais moderno e performático do
+                        desenvolvimento de software atual.</p>
+                </div>
+
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon">TS</div>
+                        <h4>TypeScript</h4>
+                        <p>Tipagem estática para código seguro e manutenível.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">JS</div>
+                        <h4>JavaScript (ES6+)</h4>
+                        <p>Interatividade de alta velocidade no ecossistema web.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">Nd</div>
+                        <h4>Node.js</h4>
+                        <p>Ambiente runtime ultra-rápido para APIs escaláveis.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">Py</div>
+                        <h4>Python</h4>
+                        <p>Perfeito para engenharia de dados, scripts e I.A.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">Pg</div>
+                        <h4>PostgreSQL</h4>
+                        <p>O banco de dados relacional mais robusto do mundo.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">Dk</div>
+                        <h4>Docker</h4>
+                        <p>Containerização para deploys consistentes e portáveis.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">A</div>
+                        <h4>Amazon Web Services</h4>
+                        <p>Infraestrutura em nuvem elástica e de alta disponibilidade.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">Gm</div>
+                        <h4>Gemini API</h4>
+                        <p>Integração de ponta para modelos de IA multimodais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terminal Interactive Section -->
+        <section id="terminal" class="terminal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa API em Ação</h2>
+                    <p class="section-subtitle font-inter">Explore respostas reais e veja como estruturamos dados e
+                        inteligência para impulsionar sua plataforma.</p>
+                </div>
+
+                <div class="terminal-mockup">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="terminal-title">api-demo.dfcoding.com.br</div>
+                    </div>
+
+                    <div class="terminal-tabs">
+                        <button class="tab-btn active" data-endpoint="ia">
+                            <span class="method post">POST</span> /ia/agent
+                        </button>
+                        <button class="tab-btn" data-endpoint="api">
+                            <span class="method get">GET</span> /api/v1/status
+                        </button>
+                        <button class="tab-btn" data-endpoint="saas">
+                            <span class="method post">POST</span> /saas/billing
+                        </button>
+                        <button class="tab-btn" data-endpoint="lp">
+                            <span class="method get">GET</span> /lp/conversion
+                        </button>
+                    </div>
+
+                    <div class="terminal-body">
+                        <pre><code id="terminalCode">// Carregando dados da requisição...</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Estimator Section -->
+        <section id="estimador" class="estimator-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Estime o Escopo do seu <span class="text-gradient">Projeto</span></h2>
+                    <p class="section-subtitle">Selecione as funcionalidades desejadas abaixo para receber uma
+                        estimativa instantânea de tempo e complexidade de engenharia.</p>
+                </div>
+
+                <div class="estimator-card">
+                    <div class="estimator-options">
+                        <h3>Funcionalidades</h3>
+
+                        <div class="option-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="feature-ia" checked>
+                                <span class="checkmark"></span>
+                                <div class="option-label-group">
+                                    <span class="option-title">Agente de I.A. & Integrações</span>
+                                    <span class="option-desc">Modelos de IA, RAG, automação cognitiva</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="option-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="feature-api" checked>
+                                <span class="checkmark"></span>
+                                <div class="option-label-group">
+                                    <span class="option-title">API Dedicada & Banco de Dados</span>
+                                    <span class="option-desc">Backend estruturado, segurança, modelagem SQL</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="option-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="feature-saas">
+                                <span class="checkmark"></span>
+                                <div class="option-label-group">
+                                    <span class="option-title">Painel SaaS & Autenticação</span>
+                                    <span class="option-desc">Controle multi-tenant, login de usuários, Stripe</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="option-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="feature-lp">
+                                <span class="checkmark"></span>
+                                <div class="option-label-group">
+                                    <span class="option-title">Landing Page Premium / Institucional</span>
+                                    <span class="option-desc">Design exclusivo, responsivo e focado em SEO</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="option-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="feature-devops">
+                                <span class="checkmark"></span>
+                                <div class="option-label-group">
+                                    <span class="option-title">Infraestrutura em Nuvem & DevOps</span>
+                                    <span class="option-desc">Docker, CI/CD, Deploy AWS/Cloudflare</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="estimator-result">
+                        <h3>Estimativa Técnica</h3>
+
+                        <div class="result-metric">
+                            <div class="metric-label">Tempo Estimado</div>
+                            <div class="metric-value" id="estimated-time">~15 dias</div>
+                        </div>
+
+                        <div class="result-metric">
+                            <div class="metric-label">Complexidade do Projeto</div>
+                            <div class="complexity-bar-wrapper">
+                                <div class="complexity-bar" id="complexity-bar" style="width: 40%"></div>
+                            </div>
+                            <div class="complexity-text" id="complexity-text">Média</div>
+                        </div>
+
+                        <div class="result-techs">
+                            <div class="metric-label">Stack Recomendada</div>
+                            <div class="tech-tags-container" id="recommended-stack">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Gemini API</span>
+                            </div>
+                        </div>
+
+                        <a href="#contato" class="btn btn-primary btn-full" id="btn-request-project">Quero Desenvolver
+                            este Projeto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="contact-section">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2>Pronto para iniciar seu <span class="text-gradient">projeto</span>?</h2>
+                    <p>Entre em contato hoje mesmo. Respondemos em menos de 24 horas com uma proposta inicial detalhada
+                        de design e engenharia.</p>
+
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">✉</span>
+                            <div>
+                                <h5>E-mail corporativo</h5>
+                                <p>contato@dfcoding.com.br</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5511970132219?text=Oi%2C%20gostaria%20de%20fazer%20um%20projeto." target="_blank" rel="noopener noreferrer" class="detail-item clickable-detail">
+                            <span class="detail-icon whatsapp-icon">
+                                <svg viewBox="0 0 48 48" class="whatsapp-svg" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Color-" transform="translate(-700.000000, -360.000000)" fill="#67C15E">
+                                            <path d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z" id="Whatsapp"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                            <div>
+                                <h5>WhatsApp de Atendimento</h5>
+                                <p>+55 (11) 97013-2219</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Seu Nome</label>
+                            <span class="error-message" id="error-name">Por favor, insira seu nome.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">E-mail de Contato</label>
+                            <span class="error-message" id="error-email">Insira um e-mail válido.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" required placeholder=" " rows="4"></textarea>
+                            <label for="message">Fale sobre seu projeto (SaaS, API, I.A. ...)</label>
+                            <span class="error-message" id="error-message">Por favor, conte-nos um pouco sobre seu
+                                projeto.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full btn-glow" id="submitBtn">
+                            <span class="btn-text">Enviar Proposta</span>
+                            <span class="spinner hidden"></span>
+                        </button>
+                    </form>
+
+                    <!-- Success message state -->
+                    <div class="success-state hidden" id="successState">
+                        <div class="success-icon">✓</div>
+                        <h3>Proposta Recebida com Sucesso!</h3>
+                        <p>Obrigado pelo contato, <span id="clientName"></span>. Analisaremos sua ideia e entraremos em
+                            contato via <span id="clientEmail"></span> nas próximas horas.</p>
+                        <button class="btn btn-secondary btn-full" id="resetContactBtn">Enviar outra mensagem</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-accent">DF</span>Coding
+                </a>
+                <p>Engenharia de software focada em alta performance, robustez e inovação com inteligência artificial.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#terminal">Demonstração</a></li>
+                    <li><a href="#estimador">Estimador</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Habilidades</h4>
+                <ul>
+                    <li><a>Agentes Inteligentes</a></li>
+                    <li><a>Engenharia de APIs</a></li>
+                    <li><a>SaaS Escaláveis</a></li>
+                    <li><a>Páginas Exclusivas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2019 DF Coding. Todos os direitos reservados. Projetado para máxima performance.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
