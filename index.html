@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
+    <meta name="description" id="meta-description"
         content="DF Coding - Soluções de software premium. Engenharia de APIs robustas, inteligência artificial integrada, arquiteturas SaaS escaláveis e landing pages exclusivas de alta performance.">
     <meta name="keywords"
         content="desenvolvimento de software, APIs, SaaS, inteligência artificial, landing pages, DF Coding, TypeScript, Node.js, automação">
@@ -12,12 +12,24 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="DF Coding | Engenharia de Software Premium & I.A.">
-    <meta property="og:description"
+    <meta property="og:title" id="og-title" content="DF Coding | Engenharia de Software Premium & I.A.">
+    <meta property="og:description" id="og-description"
         content="Engenharia de software sob medida. Conectamos sua empresa ao futuro com APIs seguras, agentes de inteligência artificial e plataformas SaaS sob medida.">
     <meta property="og:url" content="https://dfcoding.com.br/">
 
-    <title>DF Coding | Engenharia de Software Premium & I.A.</title>
+    <title id="page-title">DF Coding | Engenharia de Software Premium & I.A.</title>
+
+    <!-- Favicon & Icons (Google Search, Browsers & PWA) -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="DF Coding">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#05050a">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,22 +59,31 @@
                 <span class="logo-accent">DF</span>Coding
             </a>
 
-            <nav class="nav-menu" id="navMenu">
-                <ul>
-                    <li><a href="#inicio" class="nav-link active">Início</a></li>
-                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
-                    <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
-                    <li><a href="#terminal" class="nav-link">Demonstração</a></li>
-                    <li><a href="#estimador" class="nav-link">Estimador</a></li>
-                    <li><a href="#contato" class="nav-link btn-contact-nav">Contato</a></li>
-                </ul>
-            </nav>
+            <div class="header-right">
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="#inicio" class="nav-link active" data-i18n="nav.home">Início</a></li>
+                        <li><a href="#servicos" class="nav-link" data-i18n="nav.services">Serviços</a></li>
+                        <li><a href="#tecnologias" class="nav-link" data-i18n="nav.technologies">Tecnologias</a></li>
+                        <li><a href="#terminal" class="nav-link" data-i18n="nav.demo">Demonstração</a></li>
+                        <li><a href="#estimador" class="nav-link" data-i18n="nav.estimator">Estimador</a></li>
+                        <li><a href="#contato" class="nav-link btn-contact-nav" data-i18n="nav.contact">Contato</a></li>
+                    </ul>
+                </nav>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+                <!-- Language Switcher Pill -->
+                <div class="lang-switcher" id="langSwitcher" role="group" aria-label="Seletor de idioma">
+                    <button type="button" class="lang-btn active" data-lang="pt" aria-label="Português" aria-pressed="true">PT</button>
+                    <span class="lang-divider">/</span>
+                    <button type="button" class="lang-btn" data-lang="en" aria-label="English" aria-pressed="false">EN</button>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -73,16 +94,16 @@
                 <div class="hero-content">
                     <div class="badge">
                         <span class="badge-dot"></span>
-                        Disponível para novos projetos
+                        <span data-i18n="hero.badge">Disponível para novos projetos</span>
                     </div>
-                    <h1>Transformando código em <span class="text-gradient">soluções inteligentes</span></h1>
-                    <p class="hero-subtitle">Engenharia de software premium sob medida. Desenvolvemos APIs robustas,
+                    <h1 data-i18n-html="hero.title">Transformando código em <span class="text-gradient">soluções inteligentes</span></h1>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">Engenharia de software premium sob medida. Desenvolvemos APIs robustas,
                         arquiteturas SaaS escaláveis, integrações avançadas com I.A. e landing pages exclusivas
                         projetadas para alta conversão.</p>
 
                     <div class="hero-actions">
-                        <a href="#estimador" class="btn btn-primary btn-glow">Simular Projeto</a>
-                        <a href="#servicos" class="btn btn-secondary">Ver Habilidades</a>
+                        <a href="#estimador" class="btn btn-primary btn-glow" data-i18n="hero.btnSimulate">Simular Projeto</a>
+                        <a href="#servicos" class="btn btn-secondary" data-i18n="hero.btnSkills">Ver Habilidades</a>
                     </div>
                 </div>
 
@@ -90,15 +111,15 @@
                     <div class="floating-card hero-card-1">
                         <div class="card-icon">🚀</div>
                         <div>
-                            <h4>SaaS Escalável</h4>
-                            <p>Multi-tenant & Pagamentos</p>
+                            <h4 data-i18n="hero.card1Title">SaaS Escalável</h4>
+                            <p data-i18n="hero.card1Desc">Multi-tenant & Pagamentos</p>
                         </div>
                     </div>
                     <div class="floating-card hero-card-2">
                         <div class="card-icon">🤖</div>
                         <div>
-                            <h4>Agentes de I.A.</h4>
-                            <p>LLMs & Automação RAG</p>
+                            <h4 data-i18n="hero.card2Title">Agentes de I.A.</h4>
+                            <p data-i18n="hero.card2Desc">LLMs & Automação RAG</p>
                         </div>
                     </div>
                     <div class="hero-blob"></div>
@@ -110,8 +131,8 @@
         <section id="servicos" class="services-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">O que podemos construir para <span class="text-gradient">você</span></h2>
-                    <p class="section-subtitle">Combinamos arquiteturas de ponta com design de alta fidelidade para
+                    <h2 class="section-title" data-i18n-html="services.title">O que podemos construir para <span class="text-gradient">você</span></h2>
+                    <p class="section-subtitle" data-i18n="services.subtitle">Combinamos arquiteturas de ponta com design de alta fidelidade para
                         entregar o melhor software do mercado.</p>
                 </div>
 
@@ -130,8 +151,8 @@
                                 <path d="M10 14h4"></path>
                             </svg>
                         </div>
-                        <h3>Inteligência Artificial & Agentes</h3>
-                        <p>Integramos modelos de linguagem (LLMs), criamos assistentes virtuais cognitivos autônomos,
+                        <h3 data-i18n="services.s1Title">Inteligência Artificial & Agentes</h3>
+                        <p data-i18n="services.s1Desc">Integramos modelos de linguagem (LLMs), criamos assistentes virtuais cognitivos autônomos,
                             sistemas RAG (Retrieval-Augmented Generation) para consulta a dados internos e automações
                             que otimizam horas de trabalho manual.</p>
                     </div>
@@ -147,8 +168,8 @@
                                 <polyline points="2 12 12 17 22 12"></polyline>
                             </svg>
                         </div>
-                        <h3>Engenharia de APIs Robustas</h3>
-                        <p>Desenvolvemos APIs RESTful e GraphQL ultra-rápidas em Node.js ou Python. Focamos em segurança
+                        <h3 data-i18n="services.s2Title">Engenharia de APIs Robustas</h3>
+                        <p data-i18n="services.s2Desc">Desenvolvemos APIs RESTful e GraphQL ultra-rápidas em Node.js ou Python. Focamos em segurança
                             (OAuth2, JWT, rate-limiting), alta escalabilidade e integrações impecáveis com bancos de
                             dados relacionais e NoSQL.</p>
                     </div>
@@ -166,8 +187,8 @@
                                 <line x1="3" y1="15" x2="21" y2="15"></line>
                             </svg>
                         </div>
-                        <h3>Plataformas SaaS Completas</h3>
-                        <p>Arquitetamos o seu Software as a Service do zero. Desenvolvemos desde o controle
+                        <h3 data-i18n="services.s3Title">Plataformas SaaS Completas</h3>
+                        <p data-i18n="services.s3Desc">Arquitetamos o seu Software as a Service do zero. Desenvolvemos desde o controle
                             multi-tenant, integração avançada com gateways de pagamento (Stripe, Asaas, etc.),
                             dashboards analíticos interativos até painéis admin inteligentes.</p>
                     </div>
@@ -183,8 +204,8 @@
                                 <line x1="12" y1="17" x2="12" y2="20"></line>
                             </svg>
                         </div>
-                        <h3>Landing Pages de Alta Conversão</h3>
-                        <p>Desenvolvemos landing pages e páginas institucionais com design exclusivo e autoral,
+                        <h3 data-i18n="services.s4Title">Landing Pages de Alta Conversão</h3>
+                        <p data-i18n="services.s4Desc">Desenvolvemos landing pages e páginas institucionais com design exclusivo e autoral,
                             totalmente otimizadas para carregamento rápido (performance nota 100 no Lighthouse), SEO
                             avançado e prontas para converter visitantes em clientes.</p>
                     </div>
@@ -201,23 +222,23 @@
                                 <circle cx="12" cy="12" r="3"></circle>
                             </svg>
                         </div>
-                        <h3>Soluções Customizadas & DevOps</h3>
-                        <p>Otimização de consultas lentas em bancos de dados, configuração de pipelines de CI/CD para
+                        <h3 data-i18n="services.s5Title">Soluções Customizadas & DevOps</h3>
+                        <p data-i18n="services.s5Desc">Otimização de consultas lentas em bancos de dados, configuração de pipelines de CI/CD para
                             automação de deploys, containerização de aplicações com Docker e infraestrutura segura em
                             nuvem (AWS/GCP).</p>
                     </div>
 
                     <!-- Unique Landing Pages Feature -->
                     <div class="service-card feature-highlight">
-                        <div class="highlight-badge">DIFERENCIAL</div>
-                        <h3>Projetos 100% Personalizados</h3>
-                        <p>Não usamos templates genéricos ou construtores de arrastar e soltar que deixam seu site
+                        <div class="highlight-badge" data-i18n="services.highlightBadge">DIFERENCIAL</div>
+                        <h3 data-i18n="services.highlightTitle">Projetos 100% Personalizados</h3>
+                        <p data-i18n="services.highlightDesc">Não usamos templates genéricos ou construtores de arrastar e soltar que deixam seu site
                             lento. Cada linha de código é escrita sob medida para garantir design único, performance
                             incrível e o máximo de exclusividade para o seu negócio.</p>
                         <div class="highlight-footer">
-                            <span class="tech-tag">Design Sob Medida</span>
-                            <span class="tech-tag">Zero Bloat</span>
-                            <span class="tech-tag">SEO Perfeito</span>
+                            <span class="tech-tag" data-i18n="services.tagCustomDesign">Design Sob Medida</span>
+                            <span class="tech-tag" data-i18n="services.tagZeroBloat">Zero Bloat</span>
+                            <span class="tech-tag" data-i18n="services.tagPerfectSeo">SEO Perfeito</span>
                         </div>
                     </div>
                 </div>
@@ -228,8 +249,8 @@
         <section id="tecnologias" class="tech-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Nossa Stack de <span class="text-gradient">Tecnologia</span></h2>
-                    <p class="section-subtitle">Trabalhamos com o ecossistema mais moderno e performático do
+                    <h2 class="section-title" data-i18n-html="tech.title">Nossa Stack de <span class="text-gradient">Tecnologia</span></h2>
+                    <p class="section-subtitle" data-i18n="tech.subtitle">Trabalhamos com o ecossistema mais moderno e performático do
                         desenvolvimento de software atual.</p>
                 </div>
 
@@ -237,42 +258,42 @@
                     <div class="tech-card">
                         <div class="tech-icon">TS</div>
                         <h4>TypeScript</h4>
-                        <p>Tipagem estática para código seguro e manutenível.</p>
+                        <p data-i18n="tech.tsDesc">Tipagem estática para código seguro e manutenível.</p>
                     </div>
                     <div class="tech-card">
                         <div class="tech-icon">JS</div>
                         <h4>JavaScript (ES6+)</h4>
-                        <p>Interatividade de alta velocidade no ecossistema web.</p>
+                        <p data-i18n="tech.jsDesc">Interatividade de alta velocidade no ecossistema web.</p>
                     </div>
                     <div class="tech-card">
                         <div class="tech-icon">Nd</div>
                         <h4>Node.js</h4>
-                        <p>Ambiente runtime ultra-rápido para APIs escaláveis.</p>
+                        <p data-i18n="tech.nodeDesc">Ambiente runtime ultra-rápido para APIs escaláveis.</p>
                     </div>
                     <div class="tech-card">
                         <div class="tech-icon">Py</div>
                         <h4>Python</h4>
-                        <p>Perfeito para engenharia de dados, scripts e I.A.</p>
+                        <p data-i18n="tech.pythonDesc">Perfeito para engenharia de dados, scripts e I.A.</p>
                     </div>
                     <div class="tech-card">
                         <div class="tech-icon">Pg</div>
                         <h4>PostgreSQL</h4>
-                        <p>O banco de dados relacional mais robusto do mundo.</p>
+                        <p data-i18n="tech.postgresDesc">O banco de dados relacional mais robusto do mundo.</p>
                     </div>
                     <div class="tech-card">
                         <div class="tech-icon">Dk</div>
                         <h4>Docker</h4>
-                        <p>Containerização para deploys consistentes e portáveis.</p>
+                        <p data-i18n="tech.dockerDesc">Containerização para deploys consistentes e portáveis.</p>
                     </div>
                     <div class="tech-card">
                         <div class="tech-icon">A</div>
                         <h4>Amazon Web Services</h4>
-                        <p>Infraestrutura em nuvem elástica e de alta disponibilidade.</p>
+                        <p data-i18n="tech.awsDesc">Infraestrutura em nuvem elástica e de alta disponibilidade.</p>
                     </div>
                     <div class="tech-card">
                         <div class="tech-icon">Gm</div>
                         <h4>Gemini API</h4>
-                        <p>Integração de ponta para modelos de IA multimodais.</p>
+                        <p data-i18n="tech.geminiDesc">Integração de ponta para modelos de IA multimodais.</p>
                     </div>
                 </div>
             </div>
@@ -282,8 +303,8 @@
         <section id="terminal" class="terminal-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Nossa API em Ação</h2>
-                    <p class="section-subtitle font-inter">Explore respostas reais e veja como estruturamos dados e
+                    <h2 class="section-title" data-i18n="terminal.title">Nossa API em Ação</h2>
+                    <p class="section-subtitle font-inter" data-i18n="terminal.subtitle">Explore respostas reais e veja como estruturamos dados e
                         inteligência para impulsionar sua plataforma.</p>
                 </div>
 
@@ -323,22 +344,22 @@
         <section id="estimador" class="estimator-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Estime o Escopo do seu <span class="text-gradient">Projeto</span></h2>
-                    <p class="section-subtitle">Selecione as funcionalidades desejadas abaixo para receber uma
+                    <h2 class="section-title" data-i18n-html="estimator.title">Estime o Escopo do seu <span class="text-gradient">Projeto</span></h2>
+                    <p class="section-subtitle" data-i18n="estimator.subtitle">Selecione as funcionalidades desejadas abaixo para receber uma
                         estimativa instantânea de tempo e complexidade de engenharia.</p>
                 </div>
 
                 <div class="estimator-card">
                     <div class="estimator-options">
-                        <h3>Funcionalidades</h3>
+                        <h3 data-i18n="estimator.featuresHeader">Funcionalidades</h3>
 
                         <div class="option-group">
                             <label class="checkbox-container">
                                 <input type="checkbox" id="feature-ia" checked>
                                 <span class="checkmark"></span>
                                 <div class="option-label-group">
-                                    <span class="option-title">Agente de I.A. & Integrações</span>
-                                    <span class="option-desc">Modelos de IA, RAG, automação cognitiva</span>
+                                    <span class="option-title" data-i18n="estimator.featIaTitle">Agente de I.A. & Integrações</span>
+                                    <span class="option-desc" data-i18n="estimator.featIaDesc">Modelos de IA, RAG, automação cognitiva</span>
                                 </div>
                             </label>
                         </div>
@@ -348,8 +369,8 @@
                                 <input type="checkbox" id="feature-api" checked>
                                 <span class="checkmark"></span>
                                 <div class="option-label-group">
-                                    <span class="option-title">API Dedicada & Banco de Dados</span>
-                                    <span class="option-desc">Backend estruturado, segurança, modelagem SQL</span>
+                                    <span class="option-title" data-i18n="estimator.featApiTitle">API Dedicada & Banco de Dados</span>
+                                    <span class="option-desc" data-i18n="estimator.featApiDesc">Backend estruturado, segurança, modelagem SQL</span>
                                 </div>
                             </label>
                         </div>
@@ -359,8 +380,8 @@
                                 <input type="checkbox" id="feature-saas">
                                 <span class="checkmark"></span>
                                 <div class="option-label-group">
-                                    <span class="option-title">Painel SaaS & Autenticação</span>
-                                    <span class="option-desc">Controle multi-tenant, login de usuários, Stripe</span>
+                                    <span class="option-title" data-i18n="estimator.featSaasTitle">Painel SaaS & Autenticação</span>
+                                    <span class="option-desc" data-i18n="estimator.featSaasDesc">Controle multi-tenant, login de usuários, Stripe</span>
                                 </div>
                             </label>
                         </div>
@@ -370,8 +391,8 @@
                                 <input type="checkbox" id="feature-lp">
                                 <span class="checkmark"></span>
                                 <div class="option-label-group">
-                                    <span class="option-title">Landing Page Premium / Institucional</span>
-                                    <span class="option-desc">Design exclusivo, responsivo e focado em SEO</span>
+                                    <span class="option-title" data-i18n="estimator.featLpTitle">Landing Page Premium / Institucional</span>
+                                    <span class="option-desc" data-i18n="estimator.featLpDesc">Design exclusivo, responsivo e focado em SEO</span>
                                 </div>
                             </label>
                         </div>
@@ -381,23 +402,23 @@
                                 <input type="checkbox" id="feature-devops">
                                 <span class="checkmark"></span>
                                 <div class="option-label-group">
-                                    <span class="option-title">Infraestrutura em Nuvem & DevOps</span>
-                                    <span class="option-desc">Docker, CI/CD, Deploy AWS/Cloudflare</span>
+                                    <span class="option-title" data-i18n="estimator.featDevopsTitle">Infraestrutura em Nuvem & DevOps</span>
+                                    <span class="option-desc" data-i18n="estimator.featDevopsDesc">Docker, CI/CD, Deploy AWS/Cloudflare</span>
                                 </div>
                             </label>
                         </div>
                     </div>
 
                     <div class="estimator-result">
-                        <h3>Estimativa Técnica</h3>
+                        <h3 data-i18n="estimator.resultHeader">Estimativa Técnica</h3>
 
                         <div class="result-metric">
-                            <div class="metric-label">Tempo Estimado</div>
+                            <div class="metric-label" data-i18n="estimator.labelTime">Tempo Estimado</div>
                             <div class="metric-value" id="estimated-time">~15 dias</div>
                         </div>
 
                         <div class="result-metric">
-                            <div class="metric-label">Complexidade do Projeto</div>
+                            <div class="metric-label" data-i18n="estimator.labelComplexity">Complexidade do Projeto</div>
                             <div class="complexity-bar-wrapper">
                                 <div class="complexity-bar" id="complexity-bar" style="width: 40%"></div>
                             </div>
@@ -405,7 +426,7 @@
                         </div>
 
                         <div class="result-techs">
-                            <div class="metric-label">Stack Recomendada</div>
+                            <div class="metric-label" data-i18n="estimator.labelStack">Stack Recomendada</div>
                             <div class="tech-tags-container" id="recommended-stack">
                                 <span class="tech-tag">Node.js</span>
                                 <span class="tech-tag">TypeScript</span>
@@ -413,8 +434,7 @@
                             </div>
                         </div>
 
-                        <a href="#contato" class="btn btn-primary btn-full" id="btn-request-project">Quero Desenvolver
-                            este Projeto</a>
+                        <a href="#contato" class="btn btn-primary btn-full" id="btn-request-project" data-i18n="estimator.btnRequest">Quero Desenvolver este Projeto</a>
                     </div>
                 </div>
             </div>
@@ -424,19 +444,19 @@
         <section id="contato" class="contact-section">
             <div class="container contact-container">
                 <div class="contact-info">
-                    <h2>Pronto para iniciar seu <span class="text-gradient">projeto</span>?</h2>
-                    <p>Entre em contato hoje mesmo. Respondemos em menos de 24 horas com uma proposta inicial detalhada
+                    <h2 data-i18n-html="contact.title">Pronto para iniciar seu <span class="text-gradient">projeto</span>?</h2>
+                    <p data-i18n="contact.subtitle">Entre em contato hoje mesmo. Respondemos em menos de 24 horas com uma proposta inicial detalhada
                         de design e engenharia.</p>
 
                     <div class="contact-details">
                         <div class="detail-item">
                             <span class="detail-icon">✉</span>
                             <div>
-                                <h5>E-mail corporativo</h5>
+                                <h5 data-i18n="contact.emailTitle">E-mail corporativo</h5>
                                 <p>contato@dfcoding.com.br</p>
                             </div>
                         </div>
-                        <a href="https://wa.me/5511970132219?text=Oi%2C%20gostaria%20de%20fazer%20um%20projeto." target="_blank" rel="noopener noreferrer" class="detail-item clickable-detail">
+                        <a href="https://wa.me/5511970132219?text=Oi%2C%20gostaria%20de%20fazer%20um%20projeto." target="_blank" rel="noopener noreferrer" class="detail-item clickable-detail" id="whatsappLink">
                             <span class="detail-icon whatsapp-icon">
                                 <svg viewBox="0 0 48 48" class="whatsapp-svg" xmlns="http://www.w3.org/2000/svg">
                                     <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -447,7 +467,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <h5>WhatsApp de Atendimento</h5>
+                                <h5 data-i18n="contact.whatsappTitle">WhatsApp de Atendimento</h5>
                                 <p>+55 (11) 97013-2219</p>
                             </div>
                         </a>
@@ -458,25 +478,25 @@
                     <form id="contactForm" novalidate>
                         <div class="form-group">
                             <input type="text" id="name" required placeholder=" ">
-                            <label for="name">Seu Nome</label>
-                            <span class="error-message" id="error-name">Por favor, insira seu nome.</span>
+                            <label for="name" data-i18n="contact.nameLabel">Seu Nome</label>
+                            <span class="error-message" id="error-name" data-i18n="contact.errName">Por favor, insira seu nome.</span>
                         </div>
 
                         <div class="form-group">
                             <input type="email" id="email" required placeholder=" ">
-                            <label for="email">E-mail de Contato</label>
-                            <span class="error-message" id="error-email">Insira um e-mail válido.</span>
+                            <label for="email" data-i18n="contact.emailLabel">E-mail de Contato</label>
+                            <span class="error-message" id="error-email" data-i18n="contact.errEmail">Insira um e-mail válido.</span>
                         </div>
 
                         <div class="form-group">
                             <textarea id="message" required placeholder=" " rows="4"></textarea>
-                            <label for="message">Fale sobre seu projeto (SaaS, API, I.A. ...)</label>
-                            <span class="error-message" id="error-message">Por favor, conte-nos um pouco sobre seu
+                            <label for="message" data-i18n="contact.msgLabel">Fale sobre seu projeto (SaaS, API, I.A. ...)</label>
+                            <span class="error-message" id="error-message" data-i18n="contact.errMsg">Por favor, conte-nos um pouco sobre seu
                                 projeto.</span>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-full btn-glow" id="submitBtn">
-                            <span class="btn-text">Enviar Proposta</span>
+                            <span class="btn-text" data-i18n="contact.submitBtn">Enviar Proposta</span>
                             <span class="spinner hidden"></span>
                         </button>
                     </form>
@@ -484,10 +504,9 @@
                     <!-- Success message state -->
                     <div class="success-state hidden" id="successState">
                         <div class="success-icon">✓</div>
-                        <h3>Proposta Recebida com Sucesso!</h3>
-                        <p>Obrigado pelo contato, <span id="clientName"></span>. Analisaremos sua ideia e entraremos em
-                            contato via <span id="clientEmail"></span> nas próximas horas.</p>
-                        <button class="btn btn-secondary btn-full" id="resetContactBtn">Enviar outra mensagem</button>
+                        <h3 data-i18n="contact.successTitle">Proposta Recebida com Sucesso!</h3>
+                        <p id="successParagraph"><span data-i18n="contact.successTextPre">Obrigado pelo contato, </span><span id="clientName"></span><span data-i18n="contact.successTextMid">. Analisaremos sua ideia e entraremos em contato via </span><span id="clientEmail"></span><span data-i18n="contact.successTextPost"> nas próximas horas.</span></p>
+                        <button class="btn btn-secondary btn-full" id="resetContactBtn" data-i18n="contact.resetBtn">Enviar outra mensagem</button>
                     </div>
                 </div>
             </div>
@@ -501,32 +520,31 @@
                 <a href="#" class="logo">
                     <span class="logo-accent">DF</span>Coding
                 </a>
-                <p>Engenharia de software focada em alta performance, robustez e inovação com inteligência artificial.
-                </p>
+                <p data-i18n="footer.brandDesc">Engenharia de software focada em alta performance, robustez e inovação com inteligência artificial.</p>
             </div>
 
             <div class="footer-links">
-                <h4>Navegação</h4>
+                <h4 data-i18n="footer.navTitle">Navegação</h4>
                 <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#terminal">Demonstração</a></li>
-                    <li><a href="#estimador">Estimador</a></li>
+                    <li><a href="#inicio" data-i18n="nav.home">Início</a></li>
+                    <li><a href="#servicos" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="#terminal" data-i18n="nav.demo">Demonstração</a></li>
+                    <li><a href="#estimador" data-i18n="nav.estimator">Estimador</a></li>
                 </ul>
             </div>
 
             <div class="footer-links">
-                <h4>Habilidades</h4>
+                <h4 data-i18n="footer.skillsTitle">Habilidades</h4>
                 <ul>
-                    <li><a>Agentes Inteligentes</a></li>
-                    <li><a>Engenharia de APIs</a></li>
-                    <li><a>SaaS Escaláveis</a></li>
-                    <li><a>Páginas Exclusivas</a></li>
+                    <li><a data-i18n="footer.skill1">Agentes Inteligentes</a></li>
+                    <li><a data-i18n="footer.skill2">Engenharia de APIs</a></li>
+                    <li><a data-i18n="footer.skill3">SaaS Escaláveis</a></li>
+                    <li><a data-i18n="footer.skill4">Páginas Exclusivas</a></li>
                 </ul>
             </div>
         </div>
         <div class="container footer-bottom">
-            <p>&copy; 2019 DF Coding. Todos os direitos reservados. Projetado para máxima performance.</p>
+            <p data-i18n="footer.copyright">&copy; 2019 DF Coding. Todos os direitos reservados. Projetado para máxima performance.</p>
         </div>
     </footer>
 
